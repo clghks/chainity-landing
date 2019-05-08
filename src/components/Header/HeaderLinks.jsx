@@ -1,30 +1,43 @@
+/*eslint-disable*/
 import React from "react";
-import {Link} from "react-router-dom";
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
 
+// @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+
+// core components
 import Button from "components/CustomButtons/Button.jsx";
 
 import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
 
-function HeaderLinks({...props}) {
-    const {classes} = props;
-    return (
-        <List className={classes.list}>
-            <ListItem className={classes.listItem}>
-                <Button
-                    color="transparent"
-                    target="_blank"
-                    className={classes.navLink}
-                >
-                    <Link to="/login-page" className={classes.dropdownLink}>
-                        <i className="fas fa-sign-in-alt"/>Login
-                    </Link>
-                </Button>
-            </ListItem>
-        </List>
-    );
+function HeaderLinks({ ...props }) {
+  const { classes } = props;
+  return (
+    <List className={classes.list}>
+      <ListItem className={classes.listItem}>
+        <Button
+          component={Link} to="/login-page"
+          color="transparent"
+          className={classes.navLink}
+        >
+          로그인
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          color="transparent"
+          onClick={() => {
+            alert("[클로즈 베타 진행 중] 정식 오픈을 기다려주세요^^");
+          }}
+        >
+          가입
+        </Button>
+      </ListItem>
+    </List>
+  );
 }
 
 export default withStyles(headerLinksStyle)(HeaderLinks);
