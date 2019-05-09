@@ -31,6 +31,7 @@ import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
+import { logout } from "../LoginPage/LoginPage";
 
 class ProfilePage extends React.Component {
   render() {
@@ -41,12 +42,20 @@ class ProfilePage extends React.Component {
       classes.imgFluid
     );
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
+    const clickLogout = () => logout(this.props);
     return (
       <div>
         <Header
           color="transparent"
-          brand="Material Kit React"
-          rightLinks={<HeaderLinks />}
+          routes={{ pathname: "/" }}
+          brand="커뮤니티 보상 시스템"
+          rightLinks={
+            <HeaderLinks
+              location={this.props.location}
+              history={this.props.history}
+              clickLogout={clickLogout}
+            />
+          }
           fixed
           changeColorOnScroll={{
             height: 200,

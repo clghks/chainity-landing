@@ -19,21 +19,31 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
-
-const dashboardRoutes = [
-    { test: 'test' }
-];
+import { logout } from "../LoginPage/LoginPage";
 
 class LandingPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLogin: !!window.sessionStorage.getItem("userInfo")
+    };
+  }
+
   render() {
     const { classes, ...rest } = this.props;
     return (
       <div>
         <Header
           color="transparent"
-          routes={dashboardRoutes}
           brand="커뮤니티 보상 시스템"
-          rightLinks={<HeaderLinks />}
+          rightLinks={
+            <HeaderLinks
+              location={this.props.location}
+              history={this.props.history}
+              isLogin={this.state.isLogin}
+              clickLogout={logout}
+            />
+          }
           fixed
           changeColorOnScroll={{
             height: 400,
