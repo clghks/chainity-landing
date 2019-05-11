@@ -53,8 +53,6 @@ class ProfilePage extends React.Component {
       classes.imgFluid,
       classes.imgCardTop
     );
-    const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
-    const clickLogout = () => logout(this.props);
     return (
       <div>
         <Header
@@ -65,7 +63,7 @@ class ProfilePage extends React.Component {
             <HeaderLinks
               location={this.props.location}
               history={this.props.history}
-              clickLogout={clickLogout}
+              clickLogout={logout}
             />
           }
           fixed

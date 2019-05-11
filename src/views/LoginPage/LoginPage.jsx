@@ -24,9 +24,9 @@ import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
 
 import image from "assets/img/bg7.jpg";
 
-export const logout = props => {
+export const logout = () => {
   window.sessionStorage.removeItem("userInfo");
-  props.history.replace({ pathname: "/" });
+  window.location.replace("/");
 };
 
 class LoginPage extends React.Component {
