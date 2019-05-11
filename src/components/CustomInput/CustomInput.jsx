@@ -22,7 +22,8 @@ function CustomInput({ ...props }) {
     error,
     white,
     inputRootCustomClasses,
-    success
+    success,
+    changeEvent
   } = props;
 
   const labelClasses = classNames({
@@ -71,6 +72,7 @@ function CustomInput({ ...props }) {
         }}
         id={id}
         {...inputProps}
+        onChange={changeEvent}
       />
     </FormControl>
   );
