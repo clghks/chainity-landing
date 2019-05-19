@@ -58,7 +58,7 @@ class ProfilePage extends React.Component {
         <Header
           color="transparent"
           routes={{ pathname: "/" }}
-          brand="CHAINITY"
+          brand="Chainity"
           rightLinks={
             <HeaderLinks
               location={this.props.location}
