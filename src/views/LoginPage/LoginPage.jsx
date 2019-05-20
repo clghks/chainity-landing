@@ -86,7 +86,7 @@ class LoginPage extends React.Component {
           absolute
           color="transparent"
           routes={{ pathname: "/" }}
-          brand="커뮤니티 보상 시스템"
+          brand="Chainity"
           rightLinks={<HeaderLinks location={this.props.location} />}
           {...rest}
         />
@@ -104,7 +104,7 @@ class LoginPage extends React.Component {
                 <Card className={classes[this.state.cardAnimaton]}>
                   <form className={classes.form} onSubmit={onSubmit}>
                     <CardHeader color="primary" className={classes.cardHeader}>
-                      <h4>Login</h4>
+                      <h4>로그인</h4>
                     </CardHeader>
                     <CardBody>
                       <CustomInput
@@ -146,7 +146,7 @@ class LoginPage extends React.Component {
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
                       <Button simple color="primary" size="lg" type="submit">
-                        Get started
+                        시작 하기
                       </Button>
                     </CardFooter>
                   </form>

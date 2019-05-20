@@ -52,5 +52,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "proxy": "https://api.javacafe.co.kr"
+  "proxy": "https://api.chainity.co.kr"
 }

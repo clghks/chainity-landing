@@ -41,6 +41,9 @@ const teamStyle = {
   },
   margin5: {
     margin: "5px"
+  },
+  padding10: {
+    padding: "10px"
   }
 };
 
