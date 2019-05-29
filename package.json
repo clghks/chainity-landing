@@ -52,5 +52,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "proxy": "https://api.chainity.co.kr"
+  "proxy": "http://54.180.59.99"
 }
