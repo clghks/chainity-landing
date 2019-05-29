@@ -11,12 +11,18 @@ import LoginPage from "views/LoginPage/LoginPage.jsx";
 
 var hist = createBrowserHistory();
 
+export const ROUTER_PATH = {
+  ROOT: "/",
+  LOGIN: "/login-page",
+  PROFILE: "/profile-page"
+};
+
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/profile-page" component={ProfilePage} />
-      <Route path="/login-page" component={LoginPage} />
-      <Route path="/" component={LandingPage} />
+      <Route path={ROUTER_PATH.PROFILE} component={ProfilePage} />
+      <Route path={ROUTER_PATH.LOGIN} component={LoginPage} />
+      <Route path={ROUTER_PATH.ROOT} component={LandingPage} />
     </Switch>
   </Router>,
   document.getElementById("root")

@@ -1,4 +1,4 @@
-import { container, title } from "assets/jss/material-kit-react.jsx";
+import { container, title, cardTitle } from "assets/jss/material-kit-react.jsx";
 
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.jsx";
 
@@ -23,6 +23,10 @@ const profilePageStyle = {
     marginTop: "-80px"
   },
   ...imagesStyle,
+  cardTitle,
+  textMuted: {
+    color: "#6c757d"
+  },
   main: {
     background: "#FFFFFF",
     position: "relative",
@@ -55,6 +59,9 @@ const profilePageStyle = {
   },
   navWrapper: {
     margin: "20px auto 50px auto",
+    textAlign: "center"
+  },
+  textCenter: {
     textAlign: "center"
   }
 };
