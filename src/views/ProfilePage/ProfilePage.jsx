@@ -30,7 +30,7 @@ const groupItem = classes => {
           className={classes.imgCardTop + " " + classes.padding30}
         />
         <CardBody>
-          <h4 className={classes.cardTitle}>준비중</h4>
+          <h4 className={classes.cardTitle}>미정</h4>
           <p>
             A.I 기반의 추천 시스템으로 선별된 그룹을 추천해 드릴 예정입니다.{" "}
           </p>
@@ -77,9 +77,8 @@ class ProfilePage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div>
             <div className={classes.container}>
-              <GridContainer justify="center">
+              {/* <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={6}>
-                  {/* TODO : 프로필 사진 및 이름 변경 */}
                   <div className={classes.profile}>
                     <div>
                       <img src={profile} alt="..." className={imageClasses} />
@@ -89,7 +88,7 @@ class ProfilePage extends React.Component {
                     </div>
                   </div>
                 </GridItem>
-              </GridContainer>
+              </GridContainer> */}
               <div className={classes.title}>
                 <h3>
                   활동 그룹
@@ -115,13 +114,9 @@ class ProfilePage extends React.Component {
                       </p>
                       <Button
                         color="success"
-                        onClick={() => {
-                          alert("[클로즈 베타 준비 중] 잠시만 기다려주세요^^");
-                          return false;
-                        }}
                         // TODO : 오픈 후 위 3라인 삭제 및 아래 2라인 주석 제거
-                        // href="https://javacafe.javacafe.co.kr"
-                        // target="_blank"
+                        href="https://javacafe.chainity.co.kr"
+                        target="_blank"
                       >
                         이동하기
                       </Button>
