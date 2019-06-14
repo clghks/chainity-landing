@@ -1,6 +1,6 @@
 {
   "name": "chainity-ladning",
-  "version": "1.4.0",
+  "version": "0.5.1",
   "description": "Chainity welcome pages",
   "private": true,
   "main": "dist/index.js",
@@ -34,7 +34,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "npm run build-css && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "lint:check": "eslint . --ext=js,jsx;  exit 0",
@@ -51,6 +51,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "proxy": "https://api.chainity.co.kr"
+  ]
 }
