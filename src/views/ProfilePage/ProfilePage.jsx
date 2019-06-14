@@ -27,7 +27,7 @@ const groupItem = classes => {
         <img
           src="https://chainity.net/wp-content/uploads/2018/07/chainity-logo-V5.png"
           alt="..."
-          className={classes.imgCardTop}
+          className={classes.imgCardTop + " " + classes.padding30}
         />
         <CardBody>
           <h4 className={classes.cardTitle}>준비중</h4>
@@ -103,7 +103,7 @@ class ProfilePage extends React.Component {
                     <img
                       src={javacafeLogo}
                       alt="..."
-                      className={classes.imgCardTop}
+                      className={classes.imgCardTop + " " + classes.padding30}
                     />
                     <CardBody>
                       <h4 className={classes.cardTitle}>자바카페</h4>
