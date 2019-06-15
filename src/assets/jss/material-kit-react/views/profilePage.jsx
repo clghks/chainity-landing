@@ -63,6 +63,9 @@ const profilePageStyle = {
   },
   textCenter: {
     textAlign: "center"
+  },
+  padding30: {
+    padding: "30px"
   }
 };
 

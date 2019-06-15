@@ -1,7 +1,7 @@
 {
-  "name": "material-kit-react",
-  "version": "0.5.0",
-  "description": "Material Kit React. Coded by Creative Tim",
+  "name": "chainity-ladning",
+  "version": "0.5.1",
+  "description": "Chainity welcome pages",
   "private": true,
   "main": "dist/index.js",
   "dependencies": {
@@ -51,6 +51,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "proxy": "https://api.chainity.co.kr"
+  ]
 }

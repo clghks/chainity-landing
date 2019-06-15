@@ -49,7 +49,7 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="커뮤니티 홍보"
-                description="내부 사용자에게는 활동하는 커뮤니티 정보를 기반으로 추천을 하고, 외부 사용자에게는 인터넷 사용 기록을 바탕으로 커뮤니티를 홍보합니다. (준비 중)"
+                description="사용자에게 활동하는 커뮤니티 정보 기반의 추천을 하고, 플랫폼을 통해 외부에 커뮤니티를 홍보 할수 있습니다. (준비 중)"
                 icon={Hearing}
                 iconColor="danger"
                 vertical
