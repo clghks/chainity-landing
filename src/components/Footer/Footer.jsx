@@ -43,6 +43,15 @@ function Footer({ ...props }) {
                 Contact Chainity
               </a>
             </ListItem>
+            <ListItem className={classes.inlineBlock}>
+              <a
+                href="https://github.com/JAVACAFE-STUDY/chainity/issues/new?assignees=rygh4775&labels=bug&template=bug_report.md"
+                className={classes.block}
+                target="_blank"
+              >
+                Report BUG
+              </a>
+            </ListItem>
           </List>
         </div>
         <div className={classes.right}>
