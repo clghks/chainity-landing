@@ -145,6 +145,10 @@ const headerStyle = {
     paddingRight: "0px",
     paddingLeft: "0",
     ...transition
+  },
+  logo: {
+    width: "50px",
+    marginRight: "10px"
   }
 };
 
