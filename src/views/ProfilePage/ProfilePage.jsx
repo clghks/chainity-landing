@@ -14,7 +14,7 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 
-import profile from "assets/img/faces/christian.jpg";
+import chainityLogoText from "assets/img/logo_yellow_text.png";
 import javacafeLogo from "assets/img/javacafe-logo.png";
 
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
@@ -25,7 +25,7 @@ const groupItem = classes => {
     <GridItem xs={12} sm={6} md={4}>
       <Card>
         <img
-          src="https://chainity.net/wp-content/uploads/2018/07/chainity-logo-V5.png"
+          src={chainityLogoText}
           alt="..."
           className={classes.imgCardTop + " " + classes.padding30}
         />
