@@ -16,9 +16,13 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import headerStyle from "assets/jss/material-kit-react/components/headerStyle.jsx";
 
+import logoBackDark from "assets/img/logo_white_noText.png";
+import logoBackWhite from "assets/img/logo_black_noText.png";
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
+    this.logoRef = React.createRef();
     this.state = {
       mobileOpen: false
     };
@@ -43,6 +47,7 @@ class Header extends React.Component {
       document.body
         .getElementsByTagName("header")[0]
         .classList.add(classes[changeColorOnScroll.color]);
+      this.logoRef.current.src = logoBackWhite;
     } else {
       document.body
         .getElementsByTagName("header")[0]
@@ -50,6 +55,7 @@ class Header extends React.Component {
       document.body
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
+      this.logoRef.current.src = logoBackDark;
     }
   }
   componentWillUnmount() {
@@ -79,6 +85,7 @@ class Header extends React.Component {
         className={classes.title}
         onClick={() => this.props.history.push(routes)}
       >
+        <img src={logoBackDark} className={classes.logo} ref={this.logoRef} />
         {brand}
       </Button>
     );
