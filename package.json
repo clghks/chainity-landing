@@ -1,6 +1,6 @@
 {
   "name": "chainity-ladning",
-  "version": "0.6.0",
+  "version": "0.8.0",
   "description": "Chainity welcome pages",
   "private": true,
   "main": "dist/index.js",
