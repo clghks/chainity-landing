@@ -34,7 +34,7 @@ class LoginPage extends React.Component {
     super(props);
     this.state = {
       cardAnimaton: "cardHidden",
-      id: "",
+      email: "",
       password: ""
     };
     this.inputUserInfo = this.inputUserInfo.bind(this);
@@ -54,7 +54,7 @@ class LoginPage extends React.Component {
   inputUserInfo(e) {
     this.setState({
       ...this.state,
-      [e.currentTarget.id]: e.currentTarget.value
+      [e.currentTarget.id]: e.currentTarget.value.replace(/\s/g, "")
     });
   }
 
@@ -115,6 +115,7 @@ class LoginPage extends React.Component {
                           fullWidth: true
                         }}
                         inputProps={{
+                          value: this.state.email,
                           type: "text",
                           required: true,
                           endAdornment: (
@@ -132,6 +133,7 @@ class LoginPage extends React.Component {
                           fullWidth: true
                         }}
                         inputProps={{
+                          value: this.state.password,
                           type: "password",
                           required: true,
                           endAdornment: (
